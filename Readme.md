@@ -52,7 +52,7 @@ $ sudo make install
 $ sudo ldconfig # refresh shared library cache.
 
 ```
-## 3.配置环境变量：
+## 配置环境变量：
 * 方法一： 
     使用export命令临时修改LD_LIBRARY_PATH，只对当前shell会话有效：
 
@@ -72,9 +72,12 @@ $ sudo ldconfig # refresh shared library cache.
   `sudo ldconfig`
   ldconfig通常在系统启动时运行,而当用户安装了一个新的动态链接库时,就需要手工运行这个命令。
 
+## 编译student.proto文件
+`protoc student.proto --cpp_out=./`
+可以用`protoc --help`查看
 
-## 4.编译main.cpp
-对头文件编译时 `g++ main.cpp student.pb.cc -std=gnu++11 -lprotobuf -lthread -oa.out`
+## 编译main.cpp
+对头文件编译时 `g++ main.cpp student.pb.cc -std=gnu++11 -lprotobuf -pthread -o a.out`
 
 运行：`./main`
 
