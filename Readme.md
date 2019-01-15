@@ -1,7 +1,10 @@
 1.推荐一个比较好的网址：
 https://cloud.tencent.com/developer/article/1176660
+
 https://colobu.com/2015/01/07/Protobuf-language-guide/
+
 https://www.cnblogs.com/cposture/p/9029033.html
+
 https://blog.csdn.net/runner668/article/details/80397906
 源代码：
 https://github.com/protocolbuffers/protobuf/tree/master/src
@@ -31,7 +34,7 @@ $ make check
 $ sudo make install
 $ sudo ldconfig # refresh shared library cache.
 
-配置环境变量：
+3.配置环境变量：
 方法一： 
  使用export命令临时修改LD_LIBRARY_PATH，只对当前shell会话有效：
 
