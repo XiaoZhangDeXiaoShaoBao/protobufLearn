@@ -76,6 +76,11 @@ $ sudo ldconfig # refresh shared library cache.
 `protoc student.proto --cpp_out=./`
 可以用`protoc --help`查看
 
+这样就可以在我指定的当前目录下生成如下文件：
+```
+student.pb.h：声明你生成的类的头文件。
+student.pb.cc：你生成的类的实现文件。
+```
 ## 编译main.cpp
 对头文件编译时 `g++ main.cpp student.pb.cc -std=gnu++11 -lprotobuf -pthread -o a.out`
 
